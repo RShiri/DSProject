@@ -47,7 +47,7 @@ final-project/
 │   └── ALL_articles.csv    # Final dataset
 ```
 
-📄 See full [Final Report (PDF)](./final_report.pdf)
+📄 See full [Final Report (PDF)](./Final_report.pdf)
 
 ---
 
