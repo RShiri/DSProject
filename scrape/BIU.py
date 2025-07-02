@@ -10,8 +10,7 @@ import time
 import csv
 import openai
 
-openai.api_key = "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"
-
+openai.api_key = ""
 options = Options()
 options.add_argument('--headless')
 options.add_argument('--no-sandbox')
