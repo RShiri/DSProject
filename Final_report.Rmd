@@ -31,6 +31,9 @@ The Israeli higher education landscape is shaped by a complex interplay between 
 
 The central question guiding this study is - How does Israeli universities communicate competition and cooperation, and how does that play out on their websites?
 
+This project builds on Nir Yemini’s foundational work analyzing Israeli academic institutions' strategic behavior. 
+While his research focused on institutional policies and positioning in global academia, our work extends the analysis to the public discourse dimension — examining how universities communicate cooperation and competition through their own media output.
+
 The research investigates how cooperation and competition shapes the strategic positioning of academic institutions. 
 We focus solely on universities, as universities operate within a competitive framework emphasizing prestige, research output, and global visibility — unlike colleges, which often serve regional and vocational roles.
 
@@ -223,8 +226,20 @@ Future work could improve the analysis in several directions. First, implementin
 
 ## Appendix
 
-### Data README
+### Variables in `ALL_articles.csv`
 
+| Variable               | Description                                                                 |
+|------------------------|-----------------------------------------------------------------------------|
+| `institution`          | Publishing university name                                                  |
+| `date`                | Date of article publication                                                 |
+| `title`               | Article headline                                                            |
+| `url`                 | URL to original article                                                     |
+| `tone`                | One of: cooperative, competitive, neutral, or mixed                         |
+| `mentions_cooperation`| TRUE/FALSE – whether article mentions cooperation                           |
+| `mentions_competition`| TRUE/FALSE – whether article mentions competition                           |
+| `cooperation_type`    | Type of cooperation (e.g., Domestic, International)                         |
+| `thematic_tags`       | Content tags (semicolon-separated)                                          |
+| `length_words`        | Estimated article length in words                                           |
 
 
 ### Source code
