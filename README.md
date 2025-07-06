@@ -27,33 +27,34 @@ This project builds on Nir Yemini’s work on coopetition in Israeli academia, e
 
 ## 📊 Objective
 
-Our goal was to explore how Israeli academic institutions use cooperative, competitive, neutral, or mixed framing in their official communications, and whether this framing correlates with institutional factors (e.g., size, prestige, publication volume).
+Our goal was to explore how Israeli academic institutions use cooperative, competitive, neutral, or mixed (now labeled *Coopetitive*) framing in their official communications, and whether this framing correlates with institutional factors (e.g., size, prestige, publication volume, global ranking).
 
 ---
 
 ## 📁 Project Structure
 
-```
-final-project/
-├── README.md               # This file
-├── proposal.Rmd            # Research proposal document
-├── final_report.Rmd        # Final report with code and analysis
-├── final_report.pdf        # PDF version of the knitted report
+
+/
+├── README.md # This file
+├── proposal.Rmd # Research proposal document
+├── final_report.Rmd # Final report with code and analysis
+├── final_report.pdf # PDF version of the knitted report
 ├── code/
-│   └── plotting_code.R     # Optional: ggplot2 charts (externalized)
+│ └── plotting_code.R # Optional: ggplot2 charts (externalized)
 ├── scrape/
-│   └── scrape_code.R       # Optional: scraping logic (if available)
+│ └── scrape_code.R # Optional: scraping logic (if available)
 ├── data/
-│   └── ALL_articles.csv    # Final dataset
-```
+│ ├── ALL_articles.csv # Main article dataset
+│ └── shanghai.csv # Shanghai ranking of Israeli universities (2003–2024)
 
 📄 See full [Final Report (PDF)](./Final_report.pdf)
 
+
 ---
 
-## 📄 Dataset Description
+## 📄 Dataset Descriptions
 
-The main dataset is stored in `data/ALL_articles.csv` and includes the following columns:
+### `ALL_articles.csv`
 
 | Column                    | Description                                                                 |
 |---------------------------|-----------------------------------------------------------------------------|
@@ -61,32 +62,40 @@ The main dataset is stored in `data/ALL_articles.csv` and includes the following
 | **date**                  | Date of publication                                                         |
 | **title**                 | Article title                                                               |
 | **url**                   | Link to the original article                                                |
-| **tone**                  | One of: `cooperative`, `competitive`, `neutral`, `mixed`. <br> `mixed` = both coop & comp; `neutral` = neither. |
+| **tone**                  | One of: `Cooperative`, `Competitive`, `Neutral`, `Coopetitive`. <br> `Coopetitive` = both coop & comp; `Neutral` = neither. |
 | **mentions_cooperation**  | Whether cooperation was mentioned (TRUE/FALSE)                              |
 | **mentions_competition**  | Whether competition was mentioned (TRUE/FALSE)                              |
 | **cooperation_type**      | Type of cooperation (e.g., Domestic, International)                         |
 | **thematic_tags**         | Semicolon-separated thematic labels                                         |
 | **length_words**          | Approximate article length (in words)                                       |
 
+### `shanghai.csv`
+
+| Column            | Description                                                     |
+|-------------------|-----------------------------------------------------------------|
+| **University/Year** | University name (row name)                                     |
+| **2003–2024**     | Shanghai rank per year. May include exact rank or a range.      |
+
 ---
 
-##  Visualizations
+## 📈 Visualizations
 
 The final report includes the following visualizations:
 
-- **Distribution of Article Tones** – Pie chart showing proportions of each tone.
+- **Distribution of Article Tones** – Pie chart showing tone proportions.
 - **Article Length Distribution by Tone** – Density plot (up to 1500 words).
 - **Articles by Tone per Institution** – Bar chart showing counts per tone type.
-- **Number of Posts per Institution (All Years)** – Stacked bar chart aggregating all tones.
+- **Shanghai Ranking Over Time** – Line chart showing Shanghai global rankings (2003–2024).
 
-All plots are created with `ggplot2` and displayed using `patchwork`.
+All plots are created with `ggplot2` and arranged using `patchwork`.
 
 ---
 
-##  Dependencies
+## 📦 Dependencies
 
 To reproduce the analysis and knit the report, install the following R packages:
 
 ```r
 install.packages(c("tidyverse", "lubridate", "ggplot2", "forcats", "patchwork"))
-```
+
+
