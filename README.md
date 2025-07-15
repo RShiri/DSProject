@@ -35,17 +35,18 @@ Our goal was to explore how Israeli academic institutions use cooperative, compe
 
 
 /
-├── README.md # This file
-├── proposal.Rmd # Research proposal document
-├── final_report.Rmd # Final report with code and analysis
-├── final_report.pdf # PDF version of the knitted report
+final-project/
+├── README.md              # Project overview and team info
+├── proposal.Rmd           # Research proposal document
+├── final_report.Rmd       # Full report with code and analysis
+├── final_report.pdf       # Knitted PDF version of the report
 ├── code/
-│ └── plotting_code.R # Optional: ggplot2 charts (externalized)
+│   └── plotting_code.R    # Optional: reusable ggplot2 charts
 ├── scrape/
-│ └── scrape_code.R # Optional: scraping logic (if available)
+│   └── scrape_code.R      # Scraping logic 
 ├── data/
-│ ├── ALL_articles.csv # Main article dataset
-│ └── shanghai.csv # Shanghai ranking of Israeli universities (2003–2024)
+│   ├── ALL_articles_final_corrected.csv   # Main dataset 
+│   
 
 📄 See full [Final Report (PDF)](./Final_report.pdf)
 
