@@ -70,12 +70,7 @@ final-project/
 | **thematic_tags**         | Semicolon-separated thematic labels                                         |
 | **length_words**          | Approximate article length (in words)                                       |
 
-### `shanghai.csv`
 
-| Column            | Description                                                     |
-|-------------------|-----------------------------------------------------------------|
-| **University/Year** | University name (row name)                                     |
-| **2003–2024**     | Shanghai rank per year. May include exact rank or a range.      |
 
 ---
 
@@ -86,8 +81,7 @@ The final report includes the following visualizations:
 - **Distribution of Article Tones** – Pie chart showing tone proportions.
 - **Article Length Distribution by Tone** – Density plot (up to 1500 words).
 - **Articles by Tone per Institution** – Bar chart showing counts per tone type.
-- **Shanghai Ranking Over Time** – Line chart showing Shanghai global rankings (2003–2024).
-
+- **Top 3 competition and cooperation topics** - Bar chart showing top topics.
 All plots are created with `ggplot2` and arranged using `patchwork`.
 
 ---
