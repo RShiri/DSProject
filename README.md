@@ -34,7 +34,7 @@ Our goal was to explore how Israeli academic institutions use cooperative, compe
 ## 📁 Project Structure
 
 ```
-/
+
 final-project/
 ├── README.md              # Project overview and team info
 ├── proposal.Rmd           # Research proposal document
@@ -48,8 +48,8 @@ final-project/
 │   ├── ALL_articles_final_corrected.csv   # Main dataset 
 │   
 
-📄 See full [Final Report (PDF)](./Final_report.pdf)
 ```
+ See full [Final Report (PDF)](./Final_report.pdf)
 
 ---
 
